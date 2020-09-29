@@ -24,4 +24,18 @@
     </div>
 </section>
 
-<section class="comments"></section>
+<section class=" section comments">
+
+    <div class="container">
+        <h2 class="subtitle"><%= @post.comments.count %> <strong>Comments</strong> </h2>
+<%= render @post.comments %>
+
+    </div>
+    <div class="comments-form section">
+        <h3 class="subtitle is-4">Leave a Comment ;)</h3>
+        <%= render 'comments/form' %>
+
+    </div>
+
+
+</section>
